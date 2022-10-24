@@ -5,7 +5,6 @@ import cv2 as cv
 import numpy as np
 from skimage.measure import label, regionprops
 from skimage import color
-import time
 
 def count_colors(colors):    
     cur_index = 1
@@ -27,6 +26,7 @@ labeled = label(binary)
 
 regions = regionprops(labeled)
 
+print(labeled.max(), end=' objects\n')
 
 props_balls = []
 props_rects = []
