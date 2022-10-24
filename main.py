@@ -1,5 +1,4 @@
 from collections import defaultdict
-from re import T
 import matplotlib.pyplot as plt
 import cv2 as cv
 import numpy as np
